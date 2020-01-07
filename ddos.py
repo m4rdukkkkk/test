@@ -10,7 +10,7 @@ import IPy
 from random import randint
 from optparse import OptionParser
 from pinject import IP, UDP
-
+sys.setrecursionlimit(1000000)
 thread_sum = 1000 #线程数量(线程数据根据反射ip数量与当前cpu进行调度)
 switch_time = 0 #切换ip攻击列表间隔时间（单位/s）|值为0则不切换ip段（@target_dir文件第一个ip为永久攻击对象）
 # target_dir = 'ip.txt'#攻击ip,CIDR格式
